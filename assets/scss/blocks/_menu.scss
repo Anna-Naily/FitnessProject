@@ -1,0 +1,34 @@
+.menu {
+
+    &__list {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: rem(20px);
+            
+            // padding
+
+            @media #{$screen-tablet}{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                column-gap: rem(30px);
+                border-top: none;
+                border-bottom: none;
+               
+            }
+    }
+    &__item {
+        font-size: $font-size-tiny;
+        line-height: rem(18.2px);
+        font-weight: $font-weight-regular;
+        list-style-type: none;
+
+       
+        
+    }
+    &--blue {
+        color: $curious-blue;
+    }
+}

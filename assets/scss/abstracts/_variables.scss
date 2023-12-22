@@ -1,0 +1,126 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$white:#ffffff;
+$black: #000000;
+
+$outer-space: #202f2f;
+$curious-blue:#34aadd;
+$picton-blue: #37a7df;
+$bunker:#121920;
+
+$slate-gray:#768298;
+$heather:#bbc4d6;
+$wild-blue-yonder:#6680ae;
+$athens-gray:#ebebf1;
+$athens-gray-2: #f4f3f6;
+$tapestry:#a7507b;
+$cerise-red:#dc2c53;
+$carnation:#f95a59;
+$red-orange:#ff3332;
+$alabaster: #fafafa;
+$very-dark-gray: #4b4b4b;
+$polar: #f7fafd;
+$golden-grass: #dc971f;
+$tiber: #0a2b37;
+$alto:#d9d9d9;
+$salt-box:#69676d;
+$tuna:#3a3a43;
+
+$color-text: $bunker;
+$color-background: $alabaster;
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+$line-height-base: 26px;
+
+$font-path: "../fonts";
+
+$font-family-custom: "Roboto";
+$font-family-default: sans-serif;
+
+$font-family: $font-family-custom;
+
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$font-size-huge: 36px;
+$font-size-large: 30px;
+$font-size-medium: 24px;
+$font-size-middle: 20px;
+$font-size-small: 16px;
+$font-size-tiny: 14px;
+$font-size-miniature: 12px;
+
+$line-height-huge: 47px;
+$line-height-big: 39px;
+$line-height-large: 38px;
+$line-height-medium: 29px;
+$line-height-small: 26px;
+$line-height-tiny: 24px;
+$line-height-miniature: 19px;
+$line-height-mini: 16px;
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+
+$screen-desktop: "(min-width: 1440px)";
+$screen-tablet: "(min-width: 768px)";
+
+/**
+* Layout
+*/
+$width-container: 1240px;
+$gap-container: 20px;
+
+/**
+* Sizes
+*/
+$height-header-desktop: 80px;
+$height-header-mobile: 105px;
+
+
+$input-height: 40px;
+
+
+/**
+* Transitions and Animations
+*/
+
+$transition-duration: 300ms;
+$transition-duration-fast: 100ms;
+$transition-function: ease-in-out;
+
+/**
+* Radius
+*/
+$border-radius: 8px;
+$border-radius-medium: 5px;
+$border-radius-mini: 2px;
+
+
+/**
+* Box-shadows
+*/
+$box-shadow: 0px rem(3px) rem(10px) rgba($black, .05);
+$box-shadow-double: 0px rem(12px) rem(40px) rgba($black, .03), 0px rem(3px) rem(10px) rgba(#a4a4a4, .03);
+$box-shadow-cards: rem(-3px) 0px rem(40px) rgba($black, .01), 0px 0px rem(10px) rgba(#a4a4a4, .03);
+
+
+
+/**
+* Z-indexes
+*/
+
+$z-index-header: 50;
+$z-index-aside-substrate: 20;
+$z-index-aside-block: 30;
+

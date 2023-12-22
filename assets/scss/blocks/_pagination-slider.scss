@@ -1,0 +1,25 @@
+.pagination-slider {
+    &__box {
+        position: relative;
+    }
+    .swiper {
+        &-slide {
+            width: auto;
+        }
+        &-pagination-bullet {
+            background-color: $tapestry;
+            width: rem(9px);
+            height: rem(9px);
+
+            margin: 0 rem(2.5px) !important;
+        }
+        &-pagination-bullets {
+            bottom: rem(-5px);
+            display: none;
+
+            @media #{$screen-desktop} {
+                display: block;
+            }
+        }
+    }
+}

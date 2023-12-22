@@ -1,0 +1,22 @@
+.title {
+    &--h1 {
+        @include h1;
+    }
+    &--h2 {
+        @include h2;
+    }
+    &--h3 {
+        @include h3;
+    }
+    &--large {
+        @include title-large;
+        font-weight: $font-weight-medium;
+    }
+    &--medium {
+        @include title-medium;
+        font-weight: $font-weight-medium;
+    }
+    &--underline {
+        text-decoration: underline;
+    }
+}

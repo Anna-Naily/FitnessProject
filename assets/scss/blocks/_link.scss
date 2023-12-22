@@ -1,0 +1,21 @@
+.link{
+    color: $curious-blue;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
+    &:active{
+        text-decoration: underline;
+        opacity: 0.5;
+    }
+
+    &:disabled{
+        cursor: not-allowed;
+        pointer-events: none;
+
+    }
+}

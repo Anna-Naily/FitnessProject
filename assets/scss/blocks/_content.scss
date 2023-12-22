@@ -1,0 +1,71 @@
+.content{
+    width: 100%;
+    &--white {
+        background-color: $white;
+    }
+    &--details {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+    
+        padding: rem(30px) rem(20px) rem(10px) rem(20px);
+        @media #{$screen-tablet} {
+            padding: rem(50px) rem(39px) rem(20px) rem(39px);
+        }
+        @media #{$screen-desktop} {
+            padding: rem(50px) rem(110px) rem(20px) rem(110px);
+        }
+    }
+    &--bottom {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: rem(22px);
+        margin-top: rem(29px);
+    }
+
+    &--faq{
+
+        margin-top: rem(69px);
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
+
+        @media #{$screen-tablet} {
+            padding: rem(50px) rem(60px) rem(50px) rem(60px);
+            margin-top: rem(51px);
+        }
+        @media #{$screen-desktop} {
+            margin-top: 0;
+            padding: rem(50px) rem(76px) rem(50px) rem(76px);
+        }
+
+    }
+
+    &__editing {
+        display: flex;
+        flex-direction: column;
+        // row-gap: rem(50px);
+        width: 100%;
+
+        padding: rem(50px) rem(20px) rem(50px) rem(20px);
+        @media #{$screen-tablet} {
+ 
+            padding: rem(50px) rem(39px) rem(50px) rem(39px);
+        }
+        @media #{$screen-desktop} {
+
+            padding: rem(50px) rem(110px) rem(50px) rem(110px);
+        }
+
+        &--h3 {
+            font-size: rem($font-size-medium);
+            line-height: rem(30.48px);
+            margin-top: rem(29px);
+            margin-bottom: rem(-10px);
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    
+}

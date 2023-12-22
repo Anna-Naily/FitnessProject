@@ -1,0 +1,8 @@
+.label {
+    &--must-have {
+        &:after {
+            content:" *";
+            color: $red-orange;
+          }
+    }
+}

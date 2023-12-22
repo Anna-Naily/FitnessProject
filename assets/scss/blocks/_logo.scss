@@ -1,0 +1,22 @@
+.logo {
+position: relative;
+    &__pic {
+        &--header {
+
+            width: rem(135px);
+            height: rem(30.32px);
+        }
+
+        &--footer {
+            width: rem(93.42px);
+            height: rem(18px);
+
+            @media #{$screen-desktop}{
+                width: rem(135px);
+                height: rem(26.1px);
+            }
+        }
+        
+    }
+
+}

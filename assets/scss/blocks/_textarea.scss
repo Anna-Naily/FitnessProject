@@ -1,0 +1,44 @@
+.textarea {
+    display: flex;
+    flex-direction: column;
+
+    &__window {
+
+        width: 100%;
+        height: rem(100px);
+        font-size: rem($font-size-tiny);
+        line-height: rem($line-height-mini);
+        font-weight: $font-weight-regular;
+        resize: none;
+    
+        padding: rem(17px) rem(20px);
+        
+        color: $bunker;
+        background-color: $athens-gray;
+        border:  rem(1px) solid $athens-gray;
+        border-radius: rem($border-radius-medium);
+
+        &:focus {
+            outline-color: $slate-gray;
+        }
+        &:invalid {
+            outline-color: $carnation;
+        }
+        &:disabled {
+            background-color: $athens-gray;
+
+        }
+
+        &::placeholder {
+            color: $heather;
+        }
+    }
+
+    &__label {
+        font-size: rem($font-size-miniature);
+        line-height: rem($line-height-miniature);
+        font-weight: $font-weight-regular;
+
+        color: $very-dark-gray;
+    }
+}

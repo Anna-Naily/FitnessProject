@@ -1,0 +1,114 @@
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+
+    background-color: $white;
+
+    box-shadow: $box-shadow-cards;
+
+    border-radius: $border-radius-medium;
+
+    height: 100%;
+
+    &--slide {
+        width: rem(286px);
+        height: rem(150px)
+    }
+
+    &__icon {
+        &--pic {
+            
+            width: rem(20px);
+            height: rem(20px);
+        }
+
+        &--red {
+            color: $cerise-red;
+        }
+        &--gray {
+            color:$wild-blue-yonder;
+        }
+        &--blue {
+            color:$curious-blue;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        padding: rem(16px) rem(16px) rem(20px) rem(16px)
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+         margin-bottom: rem(10px);
+    }
+
+    &__heading {
+        font-size: rem($font-size-small);
+        line-height: rem($line-height-tiny);
+        font-weight: $font-weight-medium;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+
+        text-align: left;
+        white-space: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-wrap: break-word;
+
+        color: $bunker;
+    }
+
+    &__text {
+        font-size: rem($font-size-tiny);
+        line-height: rem(16.8px);
+        font-weight: $font-weight-regular;
+
+        width: rem(240px);
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        text-align: left;
+        white-space: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-wrap: break-word;
+
+        color: $bunker;
+
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: rem(15px);
+
+        &:first-child {
+            padding: 0;
+        }
+
+    }
+
+    &__button {
+        height: rem(29px);
+
+        padding: rem(6px) rem(30px);
+
+        border-radius: rem($border-radius-medium) 0px rem($border-radius-medium) 0px;
+
+        &--invisible {
+            display: none;
+        }
+
+    }
+
+}

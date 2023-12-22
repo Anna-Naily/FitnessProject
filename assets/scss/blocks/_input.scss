@@ -1,0 +1,164 @@
+.input {
+    $height-input: 50px;
+    $height-input-small: 40px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &--textarea {
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        width: 100%;
+        height: rem(100px);
+        font-size: rem($font-size-tiny);
+        line-height: rem($line-height-mini);
+        font-weight: $font-weight-regular;
+        resize: none;
+    
+        padding: rem(17px) rem(20px);
+        
+        color: $bunker;
+        background-color: $white;
+        border:  rem(1px) solid $athens-gray;
+        border-radius: rem($border-radius-medium);
+
+        &:focus {
+            outline-color: $slate-gray;
+        }
+        &:invalid {
+            outline-color: $carnation;
+        }
+        &:disabled {
+            background-color: $athens-gray;
+
+        }
+
+        &::placeholder {
+            color: $heather;
+        }
+        &::-webkit-scrollbar {
+                width: 0;
+                background: transparent;
+        }
+        }
+       
+
+    &--small & {
+        &__control {
+            height: rem($height-input-small);
+        }
+    }
+
+    &--buttoned & {
+        &__control {
+            padding-left: rem(49px);
+
+            @media #{$screen-tablet}{
+                padding-left: rem(39px);
+            }
+        }
+    }
+
+    &--search {
+        display: flex;
+        align-items: center;
+        column-gap: rem(5px);
+        border: 0;
+        background-color: $white;
+        flex-direction: row;
+    
+    @media #{$screen-tablet} {
+                border:  rem(1px) solid $athens-gray; 
+                border-radius: rem($border-radius-medium);
+            }
+
+    }
+
+    &__control {
+        display: block;
+        height: rem($height-input);
+        width: 100%;
+
+        padding-right: rem(20px);
+        padding-left: rem(20px);
+
+        transition: color $transition-duration $transition-function,
+        border-color $transition-duration $transition-function,
+        background-color $transition-duration $transition-function;
+
+        color: $color-text;
+
+        border:  rem(1px) solid $athens-gray;
+        border-radius: rem($border-radius-medium);
+        background-color: $white;
+        box-shadow: none;
+
+        font-size: rem($font-size-tiny);
+        line-height: rem($line-height-mini);
+        font-weight: $font-weight-regular;
+
+
+        &:focus {
+            border-color: $slate-gray;
+            outline: none;
+        }
+
+        &:disabled {
+            background-color: $athens-gray;
+        }
+        &::placeholder {
+            font-size: rem($font-size-tiny);
+            line-height: rem($line-height-mini);
+            font-weight: $font-weight-regular;
+
+            color: $heather;
+        }
+
+        &--error {
+            border-color: $carnation;
+
+            &:focus {
+                border-color: $carnation;
+            }
+        }
+
+        &-error {
+            display: none;
+        // font-size: rem(10px);
+        // line-height: rem($line-height-mini);
+        // font-weight: $font-weight-regular;
+        // color: $carnation;
+        
+        }
+    }
+
+    &__search {
+        padding: 0;
+        margin: 0;
+        border: none;
+        height: $height-input-small;
+        
+        @media #{$screen-tablet} {
+            border:  none
+       }
+    }
+
+    &__button {
+        margin-left: rem(5px);
+        border: none;
+        background: none;
+        cursor: pointer;
+        
+    
+         color: $wild-blue-yonder;
+         &--margin {
+            margin-left: 0;
+            @media #{$screen-tablet}{
+                margin-left: rem(5px);
+                }
+         }
+    }
+}

@@ -1,0 +1,86 @@
+.accordeon {
+    &__item {
+        padding: rem(20px) rem(16px);
+
+        border-radius: rem(12px);
+
+        background-color: $athens-gray-2;
+//// desk
+        & + & {
+            margin-top: rem(16px);
+        }
+    }
+    &__item--opened & {
+        
+        &__toggle {
+            &-icon {
+                transform: rotate(180deg);
+                transition: transform $transition-duration $transition-function;
+
+                color: $cerise-red;
+            }
+        }
+        &__title {
+            color: $cerise-red;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+    }
+    &__title {
+        font-size: rem($font-size-tiny);
+        line-height: rem(20px);
+        font-weight: $font-weight-medium;
+
+        margin-right: rem(16px);
+        
+        transition: color $transition-duration $transition-function;
+
+           @media #{$screen-desktop} {
+
+            font-size: rem($font-size-small);
+            line-height: rem($line-height-tiny);
+
+            margin-right: rem(35px);
+        }
+
+    }
+
+    &__body {
+        font-size: rem($font-size-miniature);
+        line-height: rem($line-height-mini);
+        font-weight: $font-weight-medium;
+
+        display: none;
+
+        padding-top: rem(12px);
+        margin-top: rem(12px);
+        margin-right: rem(16px);
+
+        border-top: rem(1px) solid $alto;
+
+        color: $salt-box;
+
+        @media #{$screen-desktop} {
+            font-size: rem($font-size-tiny);
+            line-height: rem(22px);
+
+            margin-right: rem(56px);
+            margin-top: rem(36px);
+        }
+    }
+    &__toggle {
+ 
+        &-icon {
+            transition: transform $transition-duration $transition-function;
+        }
+    }
+    &__icon {
+            width: rem(16px);
+            height: rem(16px)
+    }
+}
