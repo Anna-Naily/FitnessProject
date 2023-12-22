@@ -1,0 +1,26 @@
+.accordeon-block {
+
+    &--button {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__heading {
+        font-size: rem(18px);
+        line-height: rem($line-height-small);
+        font-weight: $font-weight-medium;
+        margin-bottom: rem(24px);
+
+        color: $bunker;
+
+        @media #{$screen-desktop} {
+            font-size: rem($font-size-medium);
+            line-height: rem(32px);
+        } 
+    }
+
+    &__elements {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(16px);
+    }
+}

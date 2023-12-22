@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Детальная</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0"
+    />
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__col header__col--logo">
+            <div class="logo">
+              <a href="index.html" class="logo__link">
+                <img
+                  class="logo__pic logo__pic--header"
+                  src="./public/images/logo-main.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__col--icon">
+            <a href="editingProfile.html" class="profile__link">
+              <div class="profile__icon profile__icon--hidden">
+                <svg
+                  class="profile__icon-pic icon button--button-without-color"
+                >
+                  <use
+                    xlink:href="public/images/icons/sprite.svg#icon-profile"
+                  ></use>
+                </svg></div
+            ></a>
+          </div>
+          <div class="header__col header__col--search header__col--no-padding">
+            <form class="form">
+              <div class="form__field">
+                <div class="form__field-block form__field-block--input">
+                  <div class="header__input input input--search">
+                    <button
+                      class="input__button input__button--margin"
+                      type="submit"
+                    >
+                      <svg class="icon" width="24px" height="24px">
+                        <use
+                          xlink:href="public/images/icons/sprite.svg#icon-search"
+                        ></use>
+                      </svg>
+                    </button>
+                    <input
+                      type="search"
+                      class="input__control input__search"
+                      name="search"
+                      placeholder="Найти..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header__col header__col--profile">
+            <div class="profile">
+              <a href="editingProfile.html" class="profile__link">
+                <div class="profile__combo profile__combo--hidden">
+                  <span class="profile__name">Владимир</span>
+                  <div class="profile__avatar">
+                    <img
+                      class="profile__avatar-pic"
+                      src="./public/images/avatar-pic.png"
+                      alt="avatar"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header--border"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page__secondary-block secondary-block">
+      <button
+        class="button button--button-without-color secondary-block__button secondary-block__button--invisible"
+        data-open-menu="menu"
+      >
+        <svg class="secondary-block__button-icon">
+          <use xlink:href="public/images/icons/sprite.svg#icon-menu"></use>
+        </svg>
+        Меню раздела
+      </button>
+      <div class="container combination">
+        <div class="combination__wrapper-sidebar" data-background="menu"></div>
+        <nav class="sidebar" data-menu="menu">
+          <div class="sidebar__header sidebar__header--desktop">
+            <span class="sidebar__heading">Меню раздела</span>
+            <button
+              class="button--button-without-color sidebar__button"
+              data-close-menu="menu"
+            >
+              <svg class="sidebar__button-icon">
+                <use
+                  xlink:href="public/images/icons/sprite.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#">Избранное</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#">Мой абонемент</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="#">Мое развитие</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="details.html">Новости клуба</a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="secondary-block__center">
+          <section class="section section__breadcrumbs">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="editingProfile.html" class="breadcrumbs__link"
+                    >Редактирование профиля</a
+                  >
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                  <a class="breadcrumbs__link">Новости клуба</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <h1>Заголовок страницы</h1>
+          <main class="content content--details content--white">
+            <time>4 августа 2019</time>
+            <h2>Заголовок новости</h2>
+            <p>
+              В нашем фитнес-клубе обновился тренажерный зал! Теперь у нас еще
+              больше современных тренажеров и новые групповые занятия. А еще у
+              нас появился новый
+              <a href="#">тренерский</a> состав, который готов помочь вам
+              достичь ваших целей. Приходите и убедитесь сами!
+            </p>
+            <img src="public/images/light.png" alt="img" />
+            <p>
+              Кроме того, мы провели косметический ремонт клуба. Теперь наш зал
+              выглядит еще более стильно и современно. Мы также обновили
+              оборудование в тренажерном зале, добавив новые, более эффективные
+              тренажеры.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, eius magnam atque minima error, sequi beatae ullam
+                voluptas voluptates repellat provident quasi natus, ex maiores
+                nam odit obcaecati asperiores nisi.
+              </li>
+              <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+            <p>
+              Помимо этого, у нас появились новые групповые
+              <a href="#">программы</a>. Теперь вы можете заниматься не только
+              силовыми тренировками, но и йогой, пилатесом, аэробикой и другими
+              видами фитнеса. Наши инструкторы имеют большой опыт работы и
+              всегда готовы помочь вам в достижении ваших целей. И последнее, но
+              не менее важное, мы расширили детский клуб. Теперь у нас есть не
+              только игровая комната, но и комната для занятий творчеством, где
+              дети могут рисовать, лепить и заниматься другими видами
+              деятельности.
+            </p>
+            <blockquote>
+              Также у нас работают опытные воспитатели, которые помогут вашему
+              ребенку чувствовать себя комфортно и безопасно во время вашего
+              посещения клуба. Опытные инструкторы помогут вам быстро освоить
+              все тонкости этих направлений и получить максимальное удовольствие
+              от занятий.
+            </blockquote>
+            <p>
+              Во-первых, наш тренерский состав пополнился новыми специалистами,
+              имеющими не только профессиональное образование, но и опыт работы
+              в ведущих фитнес-клубах мира. Они помогут разработать для вас
+              индивидуальную программу тренировок с учетом ваших целей, возраста
+              и физической подготовки.
+            </p>
+            <ol>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <ol>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. sed
+                    sint assumenda placeat corrupti,<a href="#"
+                      >molestiae deserunt
+                    </a>
+                    quis a, error commodi.
+                  </li>
+                  <li>Lorem ipsum</li>
+                  <li>Lorem ipsum dolor sit amet consectetur</li>
+                </ol>
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur sequi atque corporis laudantium quae earum molestiae ut
+                doloremque deleniti, modi praesentium magni provident
+                consequuntur nostrum rem quas necessitatibus. Debitis, iure.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                eius saepe mollitia laboriosam libero dignissimos alias
+                molestias fugit commodi, obcaecati ducimus corporis dolores
+                quos. Accusamus quae deleniti facere quis tenetur!
+              </li>
+            </ol>
+            <h3>Заголовок третьего уровня</h3>
+            <p>
+              Второе, что мы хотим отметить, это обновление нашего тренажерного
+              зала. Теперь он оснащен самыми современными и безопасными
+              тренажерами, которые позволят вам максимально эффективно
+              проработать все группы мышц. Не забыли мы и о наших любителях
+              групповых программ. В нашем <a href="#">фитнес-клубе</a> появились
+              новые направления – йога, пилатес, аэробика и многое другое.
+              Опытные инструкторы помогут вам быстро освоить все тонкости этих
+              направлений и получить максимальное удовольствие от занятий. Ну и
+              последнее, но не менее важное – мы обновили наш детский клуб.
+              Теперь здесь не только есть игровая комната, но и специальный зал
+              для занятий спортом. Ваш ребенок сможет не только весело провести
+              время, но и научиться основам здорового образа жизни.
+            </p>
+            <img src="public/images/note.png" alt="img" />
+          </main>
+        </div>
+      </div>
+    </div>
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__col footer__col--social">
+            <div class="footer__social social">
+              <ul
+                class="footer__list footer__list--leftbar social__list social__list--border"
+              >
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-inst"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__menu menu">
+              <ul class="footer__list menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Правила</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Документы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--logo">
+            <div class="logo">
+              <a href="index.html" class="logo__link logo">
+                <img
+                  class="logo__pic logo__pic--footer"
+                  src="./public/images/logo-footer.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

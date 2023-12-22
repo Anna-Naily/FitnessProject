@@ -1,0 +1,148 @@
+.modal {
+    border-radius: rem(24px);
+    box-shadow: 0 rem(12px) rem(24px) rgba($black, .16);
+
+    &--small {
+        width: rem(610px);
+
+    }
+
+    &--small & {
+        &__section {
+            @media #{$screen-tablet} {
+                padding-left: rem(120px);
+                padding-right: rem(120px);
+            }
+        }
+    }
+
+    &--centered & {
+        &__section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        height: auto !important;
+        max-width: 100%;
+
+        padding-top: rem(32px);
+        padding-bottom: rem(32px);
+
+        @media #{$screen-tablet} {
+            padding-top: rem(48px);
+            padding-bottom: rem(48px);
+        }
+    }
+
+    &__section {
+         padding-left: rem(16px);
+         padding-right: rem(16px);
+
+         &--header {
+            flex-shrink: 0;
+            padding-bottom: rem(20px);
+            &-select {
+                @media #{$screen-tablet} {
+                    padding-bottom: rem(25px);
+                }
+                
+            }
+         }
+
+         &--content {
+            flex-grow: 1;
+         }
+         &-actions {
+            margin-top: rem(40px);
+         }
+    }
+
+    &__title {
+        font-size: rem($font-size-middle);
+        line-height: rem(28px);
+        font-weight: $font-weight-medium;
+        &--left {
+            width: 100%;
+            text-align: left;
+            @media #{$screen-tablet} {
+                text-align: center;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: rem(10px);
+        padding-bottom: rem(10px);
+    }
+
+    .fancybox {
+        &-bg {
+            background: rgba($tuna, .55);
+        }
+        &-close {
+            $button-offset: 12px;
+
+            position: absolute;
+            top: rem($button-offset);
+            right: rem($button-offset);
+            cursor: pointer;
+
+            @media #{$screen-tablet} {
+                $button-offset: 20px;
+
+                top: rem($button-offset);
+                right: rem($button-offset);
+            }
+            &-icon {
+                $icon-size: 24px;
+
+                width: rem($icon-size);
+                height: rem($icon-size);
+
+                color: $picton-blue;
+            }
+        }
+        &-navigation {
+            display: none;
+        }
+
+        &-slide {
+            padding-right: rem(16px);
+            padding-left: rem(16px);
+        }
+
+        &-content {
+            overflow: visible;
+
+            padding: 0;
+        }
+    }
+
+    &-select {
+        .fancybox {
+            &-close {
+            position: absolute;
+            top: rem(-24px);
+            right: rem(-12px);
+            cursor: pointer;
+
+            @media #{$screen-tablet} {
+                top: rem(-24px);
+                right: rem(-24px);
+            }
+            &-icon {
+                color: $white;
+            }
+            }
+        }
+    }
+}

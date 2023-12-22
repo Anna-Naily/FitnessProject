@@ -1,0 +1,82 @@
+.radio {
+    &__input {
+      @include hidden-element;
+    }
+
+    &__input:checked + &__label & {
+        &__icon {
+          color: $curious-blue;
+          background-color: white;
+
+          &::after {
+            position: absolute;
+            display: block;
+            width: rem(10px);
+            height: rem(10px);
+            content: "";
+            color: $curious-blue;
+            border-radius: 50%;
+            background-color: currentColor;
+            }
+        }
+      }
+    
+      &__input:disabled + &__label {
+        cursor: default;
+      }
+    
+      &__input:disabled + &__label & {
+        &__icon {
+          border-color: $heather;
+          background-color: $athens-gray;
+        }
+      }
+    
+      &__input:disabled:checked + &__label & {
+        &__icon {
+
+          &::after{
+            color: $heather;
+        }
+        }
+      }
+  
+    &__label {
+      display: inline-flex;
+      align-items: flex-start;
+  
+      cursor: pointer;
+    }
+  
+    &__icon {
+      $size: 20px;
+  
+      position: relative;
+  
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      justify-content: center;
+  
+      width: rem($size);
+      height: rem($size);
+      margin-right: rem(8px);
+  
+      transition: color $transition-duration $transition-function,
+      border-color $transition-duration $transition-function,
+      background-color $transition-duration $transition-function;
+  
+      color: transparent;
+      border: rem(1px) solid $curious-blue;
+      border-radius: 50%;
+      background-color: $white;
+
+    }
+  
+    &__text {
+      font-size: rem($font-size-tiny);
+      line-height: rem(20px);
+    }
+  }
+
+

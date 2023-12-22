@@ -1,0 +1,25 @@
+.social { 
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: rem(23px);
+
+        @media #{$screen-tablet}{
+                display: flex;
+                justify-content: space-between;
+            }
+    }
+    &__item {
+        list-style-type: none;
+        
+    }
+    &__icon-pic {
+        width: rem(40px);
+        height: rem(40px);
+        color: $heather;
+        &:hover {
+            color: $slate-gray;
+        }
+    }
+}

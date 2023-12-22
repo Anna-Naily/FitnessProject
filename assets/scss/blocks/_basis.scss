@@ -1,0 +1,19 @@
+.basis {
+    display: flex;
+    flex-direction: column;
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: rem(20px);
+
+        @media #{$screen-desktop} {
+            margin-top: rem(30px);
+        }
+    }
+
+    &__button {
+        padding: rem(17.5px) rem(30px);
+        text-transform: none;
+    }
+}

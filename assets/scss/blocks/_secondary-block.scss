@@ -1,0 +1,45 @@
+.secondary-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-transform: none;
+
+        column-gap: rem(10px);
+        padding-top: rem(13px);
+        padding-bottom: rem(13px);
+        margin-bottom: rem(30px);
+
+        color: $curious-blue;
+        background-color: $white;
+
+        &--invisible {
+
+            @media #{$screen-desktop} {
+                display: none;
+            }
+        }
+        &:hover {
+            background-color: $white;
+        }
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: rem(30px);
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(40px);
+        }
+    }
+    &__center {
+        width: 100%;
+    }
+}

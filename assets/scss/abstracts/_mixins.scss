@@ -1,0 +1,108 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+@mixin title-large {
+    font-size: rem($font-size-huge);
+    line-height: rem($line-height-huge);
+}
+
+@mixin title-medium {
+    font-size: rem($font-size-large);
+    line-height: rem($line-height-large);
+}
+
+@mixin h1 {
+    font-size: rem($font-size-large);
+    font-weight: $font-weight-medium;
+    line-height: rem($line-height-big);
+
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+ @media #{$screen-tablet}{
+    font-size: rem($font-size-huge);
+    line-height: rem($line-height-huge);
+ }
+   
+}
+@mixin h2 {
+    font-size: rem($font-size-medium);
+    font-weight: $font-weight-medium;
+    line-height: rem($line-height-medium);
+    color: $bunker;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+ @media #{$screen-tablet}{
+    font-size: rem($font-size-large);
+    line-height: rem($line-height-large);
+ }
+
+}
+@mixin h3 {
+    font-size: rem($font-size-middle);
+    font-weight: $font-weight-medium;
+    line-height: rem($line-height-small);
+    color: $bunker;
+   
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    @media #{$screen-tablet}{
+       font-size: rem($font-size-medium);
+       line-height: rem($line-height-medium);
+    }
+}
+
+@mixin content-padding-margin {
+    
+        margin-top: rem($height-header-mobile);
+        padding-top: rem(40px);
+        padding-bottom: rem(100px);
+
+        @media #{$screen-tablet}{
+            margin-top: rem($height-header-desktop);
+            padding-top: rem(50px);
+        }
+}
+
+@mixin reset-tag-margin{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin hidden-element {
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
+}
+
+@mixin reset-position {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin resize-text {
+    white-space: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+}

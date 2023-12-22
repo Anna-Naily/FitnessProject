@@ -1,0 +1,23 @@
+.gui{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: rem(40px);
+
+    &__element{
+        display: flex;
+        column-gap: rem(30px);
+    }
+
+    &__cards {
+
+       padding-bottom: rem(30px);
+    }
+
+    &__tabs {
+        margin-bottom: rem(30px);
+    }
+    &__modal {
+        margin-bottom: rem(30px);
+    }
+}

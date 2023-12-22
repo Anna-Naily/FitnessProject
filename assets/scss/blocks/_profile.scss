@@ -1,0 +1,51 @@
+.profile {
+
+    @media #{$screen-tablet} {
+        width: rem(129px);
+    } 
+    &__avatar {
+        &-pic {
+        width: rem(40px);
+        height: rem(40px);
+        object-fit: cover;
+        border-radius: 50%;
+        }
+    }
+    &__combo {
+            &--hidden {
+                display: none;
+                @media #{$screen-tablet} {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                } 
+            }
+        }
+    &__name {
+            font-size: rem($font-size-tiny);
+            line-height: rem(16.8px);
+            font-weight: $font-weight-regular;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: $wild-blue-yonder;
+        }
+    &__icon {
+        display: inline-block;
+            &--hidden {
+                @media #{$screen-tablet} {
+                display: none;
+            } 
+            }   
+        }
+    &__icon-pic {
+        color: $curious-blue;
+        width: rem(24px);
+        height: rem(24px);
+
+    }
+    &__link {
+            color: $slate-gray;;
+        }
+
+    }

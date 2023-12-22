@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0"
+    />
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__col header__col--logo">
+            <div class="logo">
+              <a href="index.html" class="logo__link">
+                <img
+                  class="logo__pic logo__pic--header"
+                  src="./public/images/logo-main.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__col--icon">
+            <a href="editingProfile.html" class="profile__link">
+              <div class="profile__icon profile__icon--hidden">
+                <svg
+                  class="profile__icon-pic icon button--button-without-color"
+                >
+                  <use
+                    xlink:href="public/images/icons/sprite.svg#icon-profile"
+                  ></use>
+                </svg></div
+            ></a>
+          </div>
+          <div class="header__col header__col--search header__col--no-padding">
+            <form class="form">
+              <div class="form__field">
+                <div class="form__field-block form__field-block--input">
+                  <div class="header__input input input--search">
+                    <button
+                      class="input__button input__button--margin"
+                      type="submit"
+                    >
+                      <svg class="icon" width="24px" height="24px">
+                        <use
+                          xlink:href="public/images/icons/sprite.svg#icon-search"
+                        ></use>
+                      </svg>
+                    </button>
+                    <input
+                      type="search"
+                      class="input__control input__search"
+                      name="search"
+                      placeholder="Найти..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header__col header__col--profile">
+            <div class="profile">
+              <a href="editingProfile.html" class="profile__link">
+                <div class="profile__combo profile__combo--hidden">
+                  <span class="profile__name">Владимир</span>
+                  <div class="profile__avatar">
+                    <img
+                      class="profile__avatar-pic"
+                      src="./public/images/avatar-pic.png"
+                      alt="avatar"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header--border"></div>
+        </div>
+      </div>
+    </header>
+    <main class="page__content content">
+    <section class="page__section section section__top">
+        <div class="mini-cards">
+          <div class="mini-cards__slider pagination-slider">
+            <div class="pagination-slider__box" data-carousel="pagination">
+              <div class="swiper-container" data-carousel-container>
+                <ul class="mini-cards__list swiper-wrapper">
+                  <li class="mini-cards__item swiper-slide">
+                    <article class="mini-card mini-card--slide">
+                      <div class="mini-card__content">
+                        <div class="mini-card__header">
+                          <span class="mini-card__heading">Важное уведомление</span>
+                          <span class="mini-card__icon">
+                          <svg class="mini-card__icon--pic mini-card__icon--red icon">
+                          <use xlink:href="public/images/icons/sprite.svg#icon-info">
+                          </svg>
+                          </span>
+                        </div>
+                        <p class="mini-card__text">Фитнес-клуб рад сообщить о запуске новых групповых занятий по йоге и пилатесу!</p>
+                      </div>
+                      <div class="mini-card__buttons">
+                        <button class="button mini-card__button mini-card__button--invisible">
+                        </button>
+                        <button class="button mini-card__button">
+                          Подробнее
+                        </button>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="mini-cards__item swiper-slide">
+                    <article class="mini-card mini-card--slide">
+                      <div class="mini-card__content">
+                        <div class="mini-card__header">
+                          <span class="mini-card__heading">Вопрос дня</span>
+                          <span class="mini-card__icon">
+                            <svg class="mini-card__icon--pic mini-card__icon--gray icon">
+                              <use xlink:href="public/images/icons/sprite.svg#icon-question-mark-circle">
+                            </svg>
+                          </span>
+                        </div>
+                        <p class="mini-card__text">Рекомендуете ли Вы наш фитнес-клуб друзьям?</p>
+                      </div>
+                      <div class="mini-card__buttons">
+                        <button class="button--button-without-color">
+                          Нет
+                        </button>
+                        <button class="button mini-card__button">
+                          Да
+                        </button>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="mini-cards__item swiper-slide">
+                    <article class="mini-card mini-card--slide">
+                      <div class="mini-card__content">
+                        <div class="mini-card__header">
+                          <span class="mini-card__heading">Технические работы</span>
+                          <span class="mini-card__icon">
+                            <svg class="mini-card__icon--pic mini-card__icon--blue icon">
+                              <use xlink:href="public/images/icons/sprite.svg#icon-info-rotate">
+                            </svg>
+                          </span>
+                        </div>
+                        <p class="mini-card__text">Портал будет недоступен
+                          11.07.2020 с 8:00 до 13:00 </p>
+                      </div>
+                      <div class="mini-card__buttons">
+                        <button class="button mini-card__button mini-card__button--invisible">
+                        </button>
+                        <button class="button mini-card__button">
+                          Ясно-понятно
+                        </button>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="mini-cards__item swiper-slide">
+                    <article class="mini-card mini-card--slide">
+                      <div class="mini-card__content">
+                        <div class="mini-card__header">
+                          <span class="mini-card__heading">Опрос недели</span>
+                          <span class="mini-card__icon">
+                            <svg class="mini-card__icon--pic mini-card__icon--gray icon">
+                              <use xlink:href="public/images/icons/sprite.svg#icon-question-mark-circle">
+                            </svg>
+                          </span>
+                        </div>
+                        <p class="mini-card__text">Мы проводим опрос, чтобы улучшить качество наших услуг.</p>
+                      </div>
+                      <div class="mini-card__buttons">
+                        <button class="button mini-card__button mini-card__button--invisible">
+                        </button>
+                        <button class="button mini-card__button">
+                          Пройти опрос
+                        </button>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="mini-cards__item swiper-slide">
+                    <article class="mini-card mini-card--slide">
+                      <div class="mini-card__content">
+                        <div class="mini-card__header">
+                          <span class="mini-card__heading">Опрос дня</span>
+                          <span class="mini-card__icon">
+                            <svg class="mini-card__icon--pic mini-card__icon--gray icon">
+                              <use xlink:href="public/images/icons/sprite.svg#icon-question-mark-circle">
+                            </svg>
+                          </span>
+                        </div>
+                        <p class="mini-card__text">Насколько актуален для Вас список занятий?</p>
+                      </div>
+                      <div class="mini-card__buttons">
+                        <button class="button mini-card__button mini-card__button--invisible">
+                        </button>
+                        <button class="button mini-card__button">
+                          Пройти опрос
+                        </button>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <div class="pagination-slider__pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="page__section section section__information">
+      <div class="container">
+        <div class="information" data-show-more>
+          <h1 class="information__heading">Fitness</h1>
+          <span class="information__item information__item--heading">Портал о здоровье</span>
+          <span class="information__item information__item--text">Приветствуем вас на нашем портале! Мы предлагаем широкий спектр услуг для тех, кто хочет вести здоровый образ жизни и поддерживать свое тело в форме. В нашем клубе работают опытные тренеры, которые помогут вам составить индивидуальную программу тренировок и ответят на все ваши вопросы.</span>
+          <span class="information__item information__item--text information__item--invisible" data-show-more-content>В нашем клубе вы найдете все необходимое для комфортных и эффективных тренировок. Мы стремимся сделать ваше пребывание у нас максимально комфортным и безопасным, поэтому в нашем клубе регулярно проводятся санитарные обработки и дезинфекция оборудования.</span>
+
+          <button class="show-more information__button" data-show-more-toggle>
+            <span class="show-more__name" data-show-more-name>Показать еще</span>
+            <span class="show-more__name show-more__name--invisible" data-show-more-hide>
+              Скрыть
+            </span>
+            <svg class="show-more__icon icon" data-show-more-icon>
+              <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+            </svg>
+         </button>
+        </div>
+      </div>
+    </section>
+      <section class="page__section section section__content">
+        <div class="container">
+          <div class="basis">
+            <div class="tabs tabs--black" data-tabs>
+              <nav class="tabs__items tabs__items--black">
+                <ul class="tabs__list tabs__list--black">
+                  <li class="tabs__item tabs__item--black tabs__item--active" data-tab="news">
+                    <span class="tabs__name">Новости</span>
+                  </li>
+                  <li class="tabs__item tabs__item--black" data-tab="sale">
+                    <span class="tabs__name">Акции</span>
+                  </li>
+                </ul>
+              </nav>
+              <div class="tabs__body">
+                <div class="tabs__block tabs__block--active" data-tab-section="news"> 
+                  <div class="cards" data-tab-section="news">
+  
+                  <ul class="cards__list">
+                    <li class="cards__item cards__item--first">
+                      <div class="cards__wrapper">
+                        <article class="card" >
+                        <a href="details.html" class="card__link"></a>
+                        <button class="card__button" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image">
+                          <div class="card__box">
+                            <img src="./public/images/card-img.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                         <div class = "card__combination">
+                           <div class="card__content">
+                            <h3 class="card__heading">Сноуборд или лыжи?</h3>
+                            <p class="card__text">Фрирайд - это катание по неподготовленным трассам, где райдер может столкнуться с различными препятствиями и сложностями. </p>
+                           </div>
+                           <div class="card__bottom">
+                            <div class="card__bottom--leftbar">
+                                <p class="card__bottom-text card__bottom-text--date ">
+                                  04.02.2020
+                                </p>
+                              </div>
+                            <div class="card__icons">
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                </svg>
+                                <p class="card__icon-number card__bottom-text">123</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon card__icon-pic">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-chat">
+                                </svg><p class="card__icon-number card__bottom-text">76</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                </svg><p class="card__icon-number card__bottom-text">34</p>
+                              </span>
+                            </div>
+                        </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    </li>
+      
+                    <li class="cards__item cards__item--second">
+                      <div class="cards__wrapper">
+                      <article class="card">
+                        <a href="details.html" class="card__link"></a>
+                        <button class="card__button" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg>
+                        </button>
+                        <button class="card__button card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-factory.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                          <div class = "card__combination">
+                           <div class="card__content">
+                            <h3 class="card__heading"> Йога помогает улучшить здоровье, укрепить тело.</h3>
+                            <p class="card__text">Йога - это практика, которая существует уже несколько тысяч лет. Она включает в себя различные физические упражнения.</p>
+                          </div>
+                          <div class="card__bottom">
+                            <div class="card__bottom--leftbar">
+                                <p class="card__bottom-text card__bottom-text--date ">
+                                  04.02.2020
+                                </p>
+                              </div>
+                            <div class="card__icons">
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                </svg>
+                                <p class="card__icon-number card__bottom-text">123</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon card__icon-pic">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-chat">
+                                </svg><p class="card__icon-number card__bottom-text">76</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                </svg><p class="card__icon-number card__bottom-text">34</p>
+                              </span>
+                            </div>
+                        </div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    </li>
+      <!-- большая картинка -->
+                    <li class="cards__item cards__item--three cards__item--big ">
+                      <div class="cards__wrapper cards__wrapper--big">
+                      <article class="card card--big card--dark">
+                        <a href="details.html" class="card__link"></a>
+                        <button class="card__button card__button--dark" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star card__icon-star--dark icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--dark card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind card__icon-star--invisible icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image card__image--big">
+                          <div class="card__box">
+                            <img src="./public/images/card-big.png" alt="photo" class="card__image-pic ">
+                          </div>
+                        </div>
+                        <div class="card__wrapper card__wrapper--big    card__wrapper--dark">
+                         <div class ="card__combination card__combination--big">
+                          <div class="card__content">
+                           <h3 class="card__heading card__heading--white">Новый фитнес-зал</h3>
+                           <p class="card__text card__text--white card__text--wide">Здесь вы найдете современные тренажеры, просторные залы для групповых занятий, бассейн и детский клуб. Опытные тренеры помогут вам составить программу тренировок, учитывая ваши индивидуальные потребности и цели.</p>
+                          </div>
+                        
+                          <div class="card__bottom">
+                            <div class="card__bottom--leftbar">
+                              <p class="card__bottom-text card__bottom-text--white card__bottom-text--date ">
+                                04.02.2020
+                              </p>
+                            </div>
+                                <div class="card__icons">
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic card__icon-pic--white icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                    </svg>
+                                    <p class="card__icon-number card__bottom-text card__bottom-text--white">123</p>
+                                  </span>
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic card__icon-pic--white icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-chat">
+                                    </svg><p class="card__icon-number card__bottom-text card__bottom-text--white">76</p>
+                                  </span>
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic card__icon-pic--white icon ">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                    </svg><p class="card__icon-number card__bottom-text card__bottom-text--white">34</p>
+                                  </span>
+                                </div>
+                           </div>
+                         </div> 
+                        </div>
+                      </article>
+                      </div>
+                    </li>
+      
+                    <li class="cards__item cards__item--four">
+                      <div class="cards__wrapper">
+                      <article class="card">
+                        <a href="details.html" class="card__link"></a>
+                        <button class="card__button" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-qsoft.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                        <div class = "card__combination">
+                          <div class="card__content">
+                            <h3 class="card__heading">Правильное питание</h3>
+                            <p class="card__text">Правильное питание – это основа здоровья и долголетия.</p>
+                          </div>
+                          <div class="card__bottom">
+                            <div class="card__bottom--leftbar">
+                                <p class="card__bottom-text card__bottom-text--date ">
+                                  04.02.2020
+                                </p>
+                              </div>
+                            <div class="card__icons">
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                </svg>
+                                <p class="card__icon-number card__bottom-text">123</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon card__icon-pic">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-chat">
+                                </svg><p class="card__icon-number card__bottom-text">76</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                </svg><p class="card__icon-number card__bottom-text">34</p>
+                              </span>
+                            </div>
+                        </div>
+                           </div>
+                          </div>
+                      </article>
+                      </div>
+                    </li>
+      
+                    <li class="cards__item cards__item--five">
+                      <div class="cards__wrapper">
+                      <article class="card">
+                        <a href="details.html" class="card__link"></a>
+                        <button class="card__button" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-winter.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                        <div class = "card__combination">
+                          <div class="card__content">
+                           <h3 class="card__heading">На завтрак тренажеры.</h3>
+                            <p class="card__text"> Если вы только начинаете заниматься, то рекомендуется посещать зал 2-3 раза в неделю. </p>
+                          </div>
+                          <div class="card__bottom">
+                            <div class="card__bottom--leftbar">
+                                <p class="card__bottom-text card__bottom-text--date ">
+                                  04.02.2020
+                                </p>
+                              </div>
+                            <div class="card__icons">
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                </svg>
+                                <p class="card__icon-number card__bottom-text">123</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon card__icon-pic">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-chat">
+                                </svg><p class="card__icon-number card__bottom-text">76</p>
+                              </span>
+                              <span class="card__icons-bottom">
+                                <svg class="card__icon-pic icon">
+                                  <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                </svg><p class="card__icon-number card__bottom-text">34</p>
+                              </span>
+                            </div>
+                        </div>
+                           </div>
+                          </div>  
+                      </article>
+                      </div>
+                    </li>
+                  </ul>
+                </div></div>
+                <div class="tabs__block" data-tab-section="sale"> <div class="cards" data-tab-section="sale">
+  
+                  <ul class="cards__list">
+      
+                    <li class="cards__item cards__item--stock">
+                      <div class="cards__wrapper">
+                      <article class="card card--stock">
+                        <a href="#" class="card__link"></a>
+                        <button class="card__button card__button--stock" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--stock card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image card__image--order card__image--right-square">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-yoga.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                         <div class = "card__combination card__combination--order card__combination--stock">
+                           <div class="card__content card__content--horizontal">
+                            <span class="card__category card__category--stock">
+                              <p class="card__category-text">Йога</p>
+                              <p class="card__category-text">Студия Йогаджоу</p>
+                            </span>
+                            <h3 class="card__heading">День открытых дверей</h3>
+                            <p class="card__text card__text--stock card__text--horizontal">Студия йоги “Йогаджоу” - это уютное место, где вы можете забыть о суете повседневной жизни и погрузиться в мир гармонии и спокойствия. Наши опытные инструкторы помогут вам освоить различные техники йоги, которые помогут улучшить ваше физическое и эмоциональное состояние. Мы предлагаем групповые и индивидуальные занятия, а также специальные программы для беременных и детей. Приходите к нам и откройте для себя мир йоги!</p>
+                           </div>
+                           <div class="card__bottom">
+                                <div class="card__bottom--leftbar">
+                                    <p class="card__bottom-text card__bottom-text--date card__bottom-text--date-stock">
+                                      04.02.2020
+                                    </p>
+                                    <p class="card__bottom-text card__bottom-text--offer card__bottom--invisible">
+                                      Предложение активно
+                                    </p>
+                                </div>
+                                <div class="card__icons">
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                    </svg>
+                                    <p class="card__icon-number card__bottom-text">123</p>
+                                  </span>
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                    </svg><p class="card__icon-number card__bottom-text">34</p>
+                                  </span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      </div>
+                    </li>
+      
+                    <li class="cards__item cards__item--stock">
+                      <div class="cards__wrapper">
+                      <article class="card card--stock card--stock-left">
+                        <a href="#" class="card__link"></a>
+                        <button class="card__button card__button--right" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--right card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image card__image--left-square">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-taxi.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                         <div class = "card__combination card__combination--order card__combination--stock">
+                           <div class="card__content card__content--horizontal">
+                            <span class="card__category card__category--stock">
+                              <p class="card__category-text">Бассейн</p>
+                              <p class="card__category-text">Бассейн Оазис</p>
+                            </span>
+                            <h3 class="card__heading card__heading--wide">Скидки в новогодние праздники</h3>
+                            <p class="card__text card__text--stock card__text--horizontal">Акция! Получите скидку 20% на посещение бассейна, при покупке абонемента на месяц!</p>
+                           </div>
+                           <div class="card__bottom">
+                                <div class="card__bottom--leftbar">
+                                    <p class="card__bottom-text card__bottom-text--date card__bottom-text--date-stock">
+                                      04.02.2020
+                                    </p>
+                                    <p class="card__bottom-text card__bottom-text--offer card__bottom--invisible">
+                                      Предложение активно
+                                    </p>
+                                </div>
+                                <div class="card__icons">
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                    </svg>
+                                    <p class="card__icon-number card__bottom-text">123</p>
+                                  </span>
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                    </svg><p class="card__icon-number card__bottom-text">34</p>
+                                  </span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      </div>
+                    </li>
+      
+                    <li class="cards__item cards__item--stock">
+                      <div class="cards__wrapper">
+                      <article class="card card--stock">
+                        <a href="#" class="card__link"></a>
+                        <button class="card__button card__button--stock" data-tippy-content="Добавить в избранное">
+                          <svg class="card__icon-star  icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star">
+                          </svg></button>
+                        <button class="card__button card__button--stock card__button--behind">
+                          <svg class="card__icon-star card__icon-star--behind icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-star-fill">
+                          </svg>
+                        </button>
+                        <div class="card__image card__image--order card__image--right-square">
+                          <div class="card__box">
+                            <img src="./public/images/card-img-church.png" alt="photo" class="card__image-pic">
+                          </div>
+                        </div>
+                        <div class = "card__wrapper">
+                         <div class = "card__combination card__combination--order card__combination--stock">
+                           <div class="card__content card__content--horizontal">
+                            <span class="card__category card__category--stock">
+                              <p class="card__category-text">Тренажерный зал</p>
+                              <p class="card__category-text">Космос</p>
+                            </span>
+                            <h3 class="card__heading">Тренажерный зал</h3>
+                            <p class="card__text card__text--stock card__text--horizontal">Занятия с тренером стали еще дешевле!</p>
+                           </div>
+                           <div class="card__bottom">
+                                <div class="card__bottom--leftbar">
+                                    <p class="card__bottom-text card__bottom-text--date card__bottom-text--date-stock">
+                                      04.02.2020
+                                    </p>
+                                    <p class="card__bottom-text card__bottom-text--offer card__bottom--invisible">
+                                      Предложение активно
+                                    </p>
+                                </div>
+                                <div class="card__icons">
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                    </svg>
+                                    <p class="card__icon-number card__bottom-text">123</p>
+                                  </span>
+                                  <span class="card__icons-bottom">
+                                    <svg class="card__icon-pic icon">
+                                      <use xlink:href="public/images/icons/sprite.svg#icon-eye-card">
+                                    </svg><p class="card__icon-number card__bottom-text">34</p>
+                                  </span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+          <div class="basis__bottom">
+            <button class="button basis__button">
+              Смотреть еще
+              <svg class="button__icon button--rotate">
+                <use
+                  xlink:href="public/images/icons/sprite.svg#icon-arrow-left"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__col footer__col--social">
+            <div class="footer__social social">
+              <ul class="footer__list footer__list--leftbar social__list social__list--border">
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-inst"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__menu menu">
+              <ul class="footer__list menu__list">
+                <li class="menu__item">
+                 <a href="#" class="menu--blue">Правила</a> 
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Документы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--logo">
+            <div class="logo">
+            <a href="index.html" class="logo__link logo">
+              <img class="logo__pic logo__pic--footer" src="./public/images/logo-footer.png" alt="logo"/>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

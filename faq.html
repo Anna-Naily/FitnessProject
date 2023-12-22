@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>FAQ</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=0"
+    />
+    <link rel="icon" href="/assets/images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
+  </head>
+
+  <body class="page">
+    <header class="page__header header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__col header__col--logo">
+            <div class="logo">
+              <a href="index.html" class="logo__link">
+                <img
+                  class="logo__pic logo__pic--header"
+                  src="./public/images/logo-main.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="header__col--icon">
+            <a href="editingProfile.html" class="profile__link">
+              <div class="profile__icon profile__icon--hidden">
+                <svg
+                  class="profile__icon-pic icon button--button-without-color"
+                >
+                  <use
+                    xlink:href="public/images/icons/sprite.svg#icon-profile"
+                  ></use>
+                </svg></div
+            ></a>
+          </div>
+          <div class="header__col header__col--search header__col--no-padding">
+            <form class="form">
+              <div class="form__field">
+                <div class="form__field-block form__field-block--input">
+                  <div class="header__input input input--search">
+                    <button
+                      class="input__button input__button--margin"
+                      type="submit"
+                    >
+                      <svg class="icon" width="24px" height="24px">
+                        <use
+                          xlink:href="public/images/icons/sprite.svg#icon-search"
+                        ></use>
+                      </svg>
+                    </button>
+                    <input
+                      type="search"
+                      class="input__control input__search"
+                      name="search"
+                      placeholder="Найти..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header__col header__col--profile">
+            <div class="profile">
+              <a href="editingProfile.html" class="profile__link">
+                <div class="profile__combo profile__combo--hidden">
+                  <span class="profile__name">Владимир</span>
+                  <div class="profile__avatar">
+                    <img
+                      class="profile__avatar-pic"
+                      src="./public/images/avatar-pic.png"
+                      alt="avatar"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="header--border"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page__secondary-block secondary-block">
+      <button
+        class="button button--button-without-color secondary-block__button secondary-block__button--invisible"
+        data-open-menu="menu"
+      >
+        <svg class="secondary-block__button-icon">
+          <use xlink:href="public/images/icons/sprite.svg#icon-menu"></use>
+        </svg>
+        Меню раздела
+      </button>
+      <div class="combination combination--container">
+        <div class="combination__wrapper-sidebar" data-background="menu"></div>
+        <nav class="sidebar" data-menu="menu">
+          <div class="sidebar__header sidebar__header--desktop">
+            <span class="sidebar__heading">Меню раздела</span>
+            <button
+              class="button--button-without-color sidebar__button"
+              data-close-menu="menu"
+            >
+              <svg class="sidebar__button-icon">
+                <use
+                  xlink:href="public/images/icons/sprite.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__item"><a class="sidebar__link" href="#">Избранное</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#">Мой абонемент</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="#">Мое развитие</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="details.html">Новости клуба</a></li>
+            <li class="sidebar__item"><a class="sidebar__link" href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="secondary-block__center">
+        <div class="container">
+          <section class="section section__breadcrumbs">
+            <nav class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="index.html" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a href="editingProfile.html" class="breadcrumbs__link">Редактирование профиля</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                  <a class="breadcrumbs__link">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <h1>FAQ</h1>
+        </div>
+          <main class="content content--faq content--white">
+            <section class="section__accordeons">
+                <div class="section__accordeons--wrapper">
+                <div class="accordeon-block">
+                    <h3 class="accordeon-block__heading">Регистрация</h3>
+                    <div class="accordeon-block__elements">
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Обязательно ли регистрироваться на сайте, чтобы читать портал?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Взимается ли плата за регистрацию?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Что такое логин?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Может ли ребенок заниматься самостоятельно?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Что делать, если при регистрации  указал неверные данные?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordeon">
+                            <div class="accordeon__item" data-accordeon>
+                              <div class="accordeon__header" data-accordeon-toggle>
+                                <h3 class="accordeon__title">Как поменять пароль для входа в личный кабинет?</h3>
+                                <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                                  <span class="accordeon__toggle-icon">
+                                  <svg class="accordeon__icon icon">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                                  </svg>
+                                </span>
+                                </button>
+                              </div>
+                              <div class="accordeon__body" data-accordeon-content>
+                                Для регистрации на сайте фитнес-клуба необходимо заполнить форму, указав свои данные, такие как имя, фамилия, дата рождения, адрес электронной почты и номер телефона. После заполнения формы необходимо нажать на кнопку “Зарегистрироваться”. На указанный адрес электронной почты будет отправлено письмо с подтверждением регистрации.
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeon-block">
+                    <h3 class="accordeon-block__heading">Личный кабинет</h3>
+                <div class="accordeon-block__elements">
+                    <div class="accordeon">
+                        <div class="accordeon__item" data-accordeon>
+                          <div class="accordeon__header" data-accordeon-toggle>
+                            <h3 class="accordeon__title">Что делать, если я забыл свой пароль от личного кабинета?</h3>
+                            <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                              <span class="accordeon__toggle-icon">
+                              <svg class="accordeon__icon icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                              </svg>
+                            </span>
+                            </button>
+                          </div>
+                          <div class="accordeon__body" data-accordeon-content>
+                            Личный кабинет на сайте фитнес-клуба позволяет пользователям управлять своим аккаунтом, отслеживать статистику своих занятий и достижений, а также получать информацию о новых услугах и акциях клуба. В личном кабинете можно также записаться на занятия, оплатить услуги клуба и связаться с администрацией.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <div class="accordeon__item" data-accordeon>
+                          <div class="accordeon__header" data-accordeon-toggle>
+                            <h3 class="accordeon__title">Где я могу добавить/изменить электронный адрес (email)?</h3>
+                            <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                              <span class="accordeon__toggle-icon">
+                              <svg class="accordeon__icon icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                              </svg>
+                            </span>
+                            </button>
+                          </div>
+                          <div class="accordeon__body" data-accordeon-content>
+                            Личный кабинет на сайте фитнес-клуба позволяет пользователям управлять своим аккаунтом, отслеживать статистику своих занятий и достижений, а также получать информацию о новых услугах и акциях клуба. В личном кабинете можно также записаться на занятия, оплатить услуги клуба и связаться с администрацией.
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <div class="accordeon__item" data-accordeon>
+                          <div class="accordeon__header" data-accordeon-toggle>
+                            <h3 class="accordeon__title">Где я могу добавить/изменить номер телефона?</h3>
+                            <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                              <span class="accordeon__toggle-icon">
+                              <svg class="accordeon__icon icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                              </svg>
+                            </span>
+                            </button>
+                          </div>
+                          <div class="accordeon__body" data-accordeon-content>
+                            Личный кабинет на сайте фитнес-клуба позволяет пользователям управлять своим аккаунтом, отслеживать статистику своих занятий и достижений, а также получать информацию о новых услугах и акциях клуба. В личном кабинете можно также записаться на занятия, оплатить услуги клуба и связаться с администрацией.!
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <div class="accordeon__item" data-accordeon>
+                          <div class="accordeon__header" data-accordeon-toggle>
+                            <h3 class="accordeon__title">Каким образом я могу изменить свои персональные данные в личном кабинете?</h3>
+                            <button type="button" class="accordeon__toggle button button--circle button--mini button--red">
+                              <span class="accordeon__toggle-icon">
+                              <svg class="accordeon__icon icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-accordeon-arrow">
+                              </svg>
+                            </span>
+                            </button>
+                          </div>
+                          <div class="accordeon__body" data-accordeon-content>
+                            Личный кабинет на сайте фитнес-клуба позволяет пользователям управлять своим аккаунтом, отслеживать статистику своих занятий и достижений, а также получать информацию о новых услугах и акциях клуба. В личном кабинете можно также записаться на занятия, оплатить услуги клуба и связаться с администрацией.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="accordeon-block accordeon-block--button">
+                    <button class="button button--button-wide-padding" data-modal-type="modal-select" data-src="#support-2">
+                        Обратиться в техподдержку
+                    </button>
+                    <article id="support-2" class="modal modal--small modal--centered" style="display: none">
+                      <div class="modal__content">
+                        <header class="modal__section modal__section--header modal__section--header-select">
+                          <p class="modal__title modal__title--left">Техническая поддержка</p>
+                        </header>
+      
+                        <section class="modal__section modal__section--content">
+                          <form class="form form--modal" id="support-appeal">
+                            <div class="form__row form__row--bottom">
+                              <div class="form__col">
+                                <div class="form__field">
+                                  <div class="form__field-block form__field-block--label">
+                                    <label
+                                      for="text-required"
+                                      class="form__label label--must-have"
+                                    >
+                                      <span class="form__label-text">Тип обращения</span>
+                                    </label>
+                                  </div>
+                                  <div class="form__field-block form__field-block--modal">
+                                    <div class="select input " data-select>
+                                      <select class="select__control" name="selectModal" data-select-control data-placeholder="Задать вопрос" data-modal-select required>
+                                        <option></option>
+                                        <option value="1">Задать вопрос</option>
+                                        <option value="2">Неработающий функционал</option>
+                                      </select>
+                                      <label for="selectModal" id="firstname-error" class="error" data-error></label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form__row form__row--between" id="input-email" style="display:none">
+                              <div class="form__col">
+                                <div class="form__field">
+                                  <div class="form__field-block form__field-block--label">
+                                    <label
+                                      for="text-required"
+                                      class="form__label label--must-have"
+                                    >
+                                      <span class="form__label-text">E-mail</span>
+                                    </label>
+                                  </div>
+            
+                                  <div class="form__field-block">
+                                    <div class="input">
+                                      <input
+                                        type="text"
+                                        class="input__control"
+                                        name="email"
+                                        id="text"
+                                        placeholder="example@icloud.com"
+                                        data-mask
+                                        data-inputmask="'mask' : '*{3,20}@*{3,20}.*{2,7}'"
+                                        required
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+      
+                            <div class="form__row">
+                              <div class="form__col">
+                                <div class="form__field-block form__field-block--input">
+                                  <div class="input">
+                                    <div class="form__field-block form__field-block--label">
+                                      <label for="textarea" class="form__label">
+                                        <span class="form__label-text"
+                                          >Напишите вопрос</span
+                                        >
+                                      </label>
+                                    </div>
+                                    <textarea
+                                      class="input--textarea"
+                                      name="textarea"
+                                      placeholder="Причина..."
+                                    ></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+      
+                            <div class="modal__section-actions">
+                              <button class="modal__button button" type="submit" >Отправить</button>
+                          </div>
+                          </form>
+                        </section>
+                      </div>
+                   </article>
+                </div>
+                </section>
+          </main>
+        </div>
+      </div>
+      <section class="section section__bottom">
+        <div class="reviews">
+            <div class="reviews__slider slider">
+              <div class="slider__box" data-carousel="infinity">
+                <div class="swiper-container" data-carousel-container>
+                  <ul class="reviews__list swiper-wrapper">
+                    <li class="reviews__item swiper-slide">
+                      <article class="review review--slide">
+                        <div class="review__header">
+                          <div class="review__profile">
+                            <img src="./public/images/review-pic.png" alt="avatar" class="review__profile-pic">
+                            <span class="review__profile-name">Анна</span>
+                          </div>
+                          <time class="review__date">04.11.2020</time>
+                        </div>
+                        <span class="review__text">
+                          Я недавно начала заниматься в фитнес-клубе и была приятно удивлена уровнем профессионализма тренеров. Они всегда готовы помочь, подсказать и даже поддержать, если это необходимо.
+                        </span>
+                        <div class="review__bottom"><img src="./public/images/review-logo-magnit.png" alt="logo" class="review__bottom-logo"></div>
+                      </article>
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                      <article class="review review--slide">
+                        <div class="review__header">
+                          <div class="review__profile">
+                            <img src="./public/images/review-pic.png" alt="avatar" class="review__profile-pic">
+                            <span class="review__profile-name">Александра</span>
+                          </div>
+                          <time class="review__date">04.11.2020</time>
+                        </div>
+                        <span class="review__text">
+                          Я недавно начала посещать фитнес-клуб и заметил, что тренеры здесь очень профессиональные и дружелюбные. Они всегда готовы помочь и подсказать, если что-то непонятно. Тренажерный зал хорошо оборудован, есть все необходимые тренажеры для разных групп мышц. Групповые занятия также интересные и разнообразные. В целом, я доволен своим выбором и рекомендую этот фитнес-клуб всем, кто хочет улучшить свою физическую форму и здоровье.
+                        </span>
+                        <div class="review__bottom"><img src="./public/images/review-logo-magnit.png" alt="logo" class="review__bottom-logo"></div>
+                      </article>
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                      <article class="review review--slide">
+                        <div class="review__header">
+                          <div class="review__profile">
+                            <img src="./public/images/review-pic.png" alt="avatar" class="review__profile-pic">
+                            <span class="review__profile-name">Александр Александрович</span>
+                          </div>
+                          <time class="review__date">05.04.2019</time>
+                        </div>
+                        <span class="review__text">
+                          Я недавно начал ходить в фитнес клуб и заметил, что здесь работают профессиональные тренеры, которые всегда готовы помочь. Тренажерный зал оборудован всем необходимым для эффективных тренировок, а групповые занятия проходят весело и интересно. Атмосфера в клубе очень дружелюбная, и я чувствую, что становлюсь частью команды. Рекомендую этот фитнес клуб всем, кто хочет изменить свою жизнь к лучшему!
+                        </span>
+                        <div class="review__bottom"><img src="./public/images/review-logo-sber.png" alt="logo" class="review__bottom-logo"></div>
+                      </article>
+                    </li>
+                  </ul>
+
+                  <div class="slider__buttons">
+                    <div class="slider__buttons-item swiper-button-prev" data-carousel-prev>
+                      <button type="button" class="slider__button slider__button--prev button--circle">
+                        <svg class="slider__button-icon icon">
+                        <use xlink:href="public/images/icons/sprite.svg#icon-right-arrow">
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="slider__buttons-item swiper-button-next" data-carousel-next>
+                      <button type="button" class="slider__button slider__button--next button--circle">
+                      <svg class="slider__button-icon icon">
+                      <use xlink:href="public/images/icons/sprite.svg#icon-right-arrow">
+                      </svg>
+                    </button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__col footer__col--social">
+            <div class="footer__social social">
+              <ul
+                class="footer__list footer__list--leftbar social__list social__list--border"
+              >
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__icon">
+                    <svg class="social__icon-pic icon">
+                      <use
+                        xlink:href="public/images/icons/sprite.svg#icon-inst"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--menu">
+            <div class="footer__menu menu">
+              <ul class="footer__list menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Правила</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Документы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu--blue">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--logo">
+            <div class="logo">
+              <a href="index.html" class="logo__link logo">
+                <img class="logo__pic logo__pic--footer" src="./public/images/logo-footer.png" alt="logo"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.show-more {
+    font-size: rem($font-size-miniature);
+    font-weight: $font-weight-medium;
+    line-height: rem($line-height-mini);
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+
+    
+    &__name {
+
+        color: $salt-box;
+        margin-right: rem(8px);
+
+       &--invisible {
+            display: none;
+        } 
+    }
+
+    &__icon {
+        color: $cerise-red;
+        width: rem(12px);
+        height: rem(12px);
+        transition: transform $transition-duration $transition-function;
+
+        &--rotate{
+            transform: rotate(180deg);
+            transition: transform $transition-duration $transition-function;
+        }
+    }
+
+
+    
+}

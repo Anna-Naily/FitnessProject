@@ -1,0 +1,104 @@
+.tabs{
+    transition: $transition-duration $transition-function;
+    
+    &--blue & {
+        &__item {
+            color: $curious-blue;
+            border-radius: rem(4px);
+            background-color: $athens-gray;
+            
+            &--active {
+            color: $white;
+            background-color: $curious-blue;
+            }
+        }
+    }
+
+    &--black & {
+        &__item {
+            transition: $transition-duration-fast $transition-function;
+
+            &::after {
+                border-bottom: rem(4px) solid transparent;
+                content: "";
+                transform: rotate(180deg);
+            }
+            &--active {
+            color: $bunker;
+            
+            &::after {
+                border-bottom: rem(4px) solid $cerise-red;
+                border-radius: 0px 0px 4px 4px;
+                content: "";
+                transform: rotate(180deg);
+            }
+            }
+
+            &:hover {
+                color: $bunker;
+            }
+        }
+    }
+    &__name{
+        padding-bottom: rem(11px);
+    }
+   
+    &__items{
+        margin-bottom: rem(30px);
+
+    @media #{$screen-tablet} {
+        margin-bottom: rem(50px);
+    }
+    @media #{$screen-desktop} {
+        margin-bottom: rem(50px);
+    }
+        &--black {
+            width: 100%;
+            border-bottom: rem(1px) solid $heather;
+        }
+    }
+
+    &__list {
+        
+        display: flex;
+        align-items: center;
+
+        &--black {
+            column-gap: rem(50px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        font-size: rem($font-size-small);
+        line-height: rem($line-height-tiny);
+        font-weight: $font-weight-medium;
+
+        padding: rem(10px) rem(20px);
+        cursor: pointer;
+
+        
+
+        /////отступы
+        & + & {
+            margin-left: rem(19px);
+            
+        }
+
+        &--black{
+            color: $heather;
+            padding:0;
+            
+        }
+    }
+
+    &__block {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+    
+}

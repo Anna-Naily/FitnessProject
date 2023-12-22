@@ -1,0 +1,102 @@
+.sidebar{
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 99;
+   top: 0;
+   right: 0;
+   display: none;
+   background-color: $white;
+   overflow: auto;
+
+   @media #{$screen-tablet} {
+      position: fixed;
+      width: rem(375px);
+      height: 100vh;
+     }
+   
+   @media #{$screen-desktop} {
+   display: block;
+   position: static;
+   min-width: rem(286px);
+   height: max-content;
+   z-index: 1;
+
+   border-radius: rem($border-radius);
+
+   box-shadow: $box-shadow-double;
+  }
+   &--invisible {
+      display: none;
+   }
+
+   &__active {
+      display: block;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+   }
+   &__item {
+      
+      padding: rem(11px) rem(20px) rem(9px) rem(20px);
+      font-size: rem($font-size-tiny);
+      line-height: rem(19.6px);
+      font-weight: $font-weight-regular;
+
+      color: $bunker;
+
+      cursor: pointer;
+
+      transition: $transition-duration $transition-function;
+
+      @media #{$screen-desktop} {
+
+         padding: rem(21px) rem(30px);
+        }
+
+        &:hover {
+         background-color: $alabaster;
+        }
+        &:active {
+         font-weight: $font-weight-medium;
+         background-color: $white;
+        }
+   }
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(15px) rem(20px);
+
+      border-bottom: rem(1px) solid $athens-gray;
+      margin-bottom: rem(10px);
+
+      &--desktop {
+         @media #{$screen-desktop} {
+            display: none;
+           }
+      }    
+   }
+   &__heading {
+      font-size: rem(18px);
+      line-height: rem(25.2px);
+      font-weight: $font-weight-medium;
+      color: $bunker;
+   }
+   &__button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      &-icon {
+         color: $curious-blue;
+         width: rem(24px);
+         height: rem(24px);
+      }
+   }
+   &__link {
+      text-decoration: none;
+      color: $bunker;
+   }
+}

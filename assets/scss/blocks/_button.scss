@@ -1,0 +1,101 @@
+.button {
+    display: flex;
+    align-items: center;
+
+    font-size: rem($font-size-tiny);
+    line-height: rem($line-height-mini - 1px);
+    font-weight: $font-weight-medium;
+    text-align: center;
+    text-transform:none;
+    cursor: pointer;
+
+    padding:  rem(10px) rem(30px);
+    border: none;
+    border-radius: rem($border-radius-medium);
+
+    background-color: $curious-blue;
+    color: $white;
+
+    transition: $transition-duration $transition-function;
+
+    &:hover {
+        background-color: $wild-blue-yonder;
+    }
+
+    &:focus {
+        background-color: $wild-blue-yonder;
+        opacity: 0.5;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+
+        background-color: $athens-gray;
+        color: $heather;
+    }
+
+    &__icon {
+        width: rem(10.13px);
+        height: rem(9px);
+        margin-left: rem(10px);
+
+        color: $white;
+    }
+    
+    &--rotate {
+            transform: rotate(180deg);
+    }
+
+
+    &--button-without-color {
+        font-size: rem($font-size-tiny);
+        line-height: rem($line-height-mini);
+        font-weight: $font-weight-medium;
+
+        padding: 0;
+        
+        cursor: pointer;
+        text-align: center;
+        
+        border: none;
+        background: none;
+        color: $curious-blue;
+        
+        &:hover {
+            color: $wild-blue-yonder;
+            background: none;
+        }
+    
+        &:focus {
+            opacity: 0.5;
+        }
+    
+    }
+
+    &--button-wide-padding {
+       padding: rem(17.5px) rem(30px); 
+    }
+
+    &--circle {
+        border-radius: 50%;
+    }
+
+    &--mini {
+        width: rem(24px);
+        height: rem(24px);
+        padding: rem(4px);
+    }
+
+    &--red {
+        background-color: $white;
+        color: $bunker;
+
+        &:hover,
+        &:focus {
+            color: $cerise-red;
+            border-color: $white;
+            background-color: $white;
+        }
+    }
+}
+
